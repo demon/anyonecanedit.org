@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url("https://fonts.googleapis.com/css?family=Lora");
+html, body, div, span, h1, h2, h3, p, a, abbr, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
+  margin: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  border-style: none;
+}
+
+body, p, a, a:hover {
+  color: #000000;
+}
+
+a, a:hover {
+  text-decoration: none;
+  border: none;
+  border-style: none;
+  box-shadow: none;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  background-color: #061C30;
+}
+
+body.page-template-page-fullsingle-ace {
+  background-color: #061C30;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 33px;
+  letter-spacing: -0.2px;
+  color: #848d96;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+body.page-template-page-fullsingle-ace p {
+  color: #848d96;
+}
+
+.fs-ace {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .fs-ace {
+    height: auto;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.fs-ace .ace-image {
+  width: 50%;
+  height: 100vh;
+  background-image: url("background.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  .fs-ace .ace-image {
+    height: 80vh;
+    width: 100%;
+  }
+}
+
+.fs-ace .ace-content {
+  width: 50%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+@media (max-width: 800px) {
+  .fs-ace .ace-content {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.fs-ace .ace-content .ace-content-vertically-center {
+  padding: 80px;
+  max-width: 640px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 1200px) {
+  .fs-ace .ace-content .ace-content-vertically-center {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .fs-ace .ace-content .ace-content-vertically-center {
+    padding: 40px;
+  }
+}
+
+.ace-intro {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: -2px;
+}
+
+.ace-intro h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 40px;
+  letter-spacing: 0.4px;
+  color: #47bec7;
+}
+
+.ace-intro .tagline {
+  color: #CCCCCC;
+}
+
+.ace-bio {
+  padding: 40px 0 40px 0;
+  font-family: 'Lora', serif;
+}
+
+@media (max-width: 1200px) {
+  .ace-bio {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .ace-bio {
+    padding: 20px 0;
+  }
+}
+
+.ace-bio p {
+  color: #848d96;
+  padding-top: 12pt;
+}
+
+.ace-bio a {
+  color: #848d96;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  border-bottom: 1px dotted #848d96;
+}
+
+.ace-bio a:hover {
+  color: #CA486d;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  border-bottom: 1px dotted #CA486d;
+}
+
+.ace-lists .ace-list {
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 500px) {
+  .ace-lists .ace-list {
+    width: 90%;
+  }
+}
+
+.ace-lists .ace-list h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 11px;
+  margin-bottom: 31px;
+  color: #848d96;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.ace-lists .ace-list ul li {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+
+.ace-lists .ace-list ul li a {
+  color: #848d96;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.ace-lists .ace-list ul li a:hover {
+  color: #CA486d;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+
+.ace-credit {
+  opacity: 0.4;
+}
+
+.ace-credit p {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.ace-credit p a {
+  color: #848d96;
+}
